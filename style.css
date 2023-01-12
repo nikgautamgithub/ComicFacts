@@ -80,3 +80,15 @@ button:hover{
     transform: scale(1.05);
     opacity: 1;
 }
+
+@media screen and (max-width: 650px) {
+    .wrapper{
+        margin: 10px 20px;
+    }
+    .content{
+        display: block;
+    }
+    .info{
+        margin: 20px 0;
+    }
+}
