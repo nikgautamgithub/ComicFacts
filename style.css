@@ -85,10 +85,21 @@ button:hover{
     .wrapper{
         margin: 10px 20px;
     }
+    .name{
+        text-align: center;
+    }
+    img{
+        height: 250px;
+    }
     .content{
         display: block;
+        font-family: 'Comic Neue', cursive;
     }
     .info{
         margin: 20px 0;
+    }
+    .button-div{
+        display: flex;
+        justify-content: center;
     }
 }
