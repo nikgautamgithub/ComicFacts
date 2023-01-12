@@ -61,6 +61,7 @@ img{
 }
 
 .info > h4{
+    margin-top: 5px;
     margin-bottom: 4px;
 }
 
@@ -99,7 +100,7 @@ button:hover{
         font-family: 'Comic Neue', cursive;
     }
     img{
-        height: 250px;
+        height: 325px;
         width: auto;
     }
     .info{
