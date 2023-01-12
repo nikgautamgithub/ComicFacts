@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     color: aliceblue;
-    font-family: 'Bangers', cursive;
     letter-spacing: 3px;
     -ms-overflow-style: none;  /* Hide Scrollbar Internet Explorer 10+ */
     scrollbar-width: none; /* Hide Scrollbar Firefox */
@@ -13,6 +12,7 @@
 }
 
 body{
+    font-family: 'Bangers', cursive;
     font-size: 2vmax;
     /* background: linear-gradient(256deg, rgba(195,34,34,1) 0%, rgba(45,50,253,1) 100%); */
     background: url('https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN1cGVyaGVybyUyMGJhY2tncm91bmR8ZW58MHx8MHx8');
@@ -28,6 +28,10 @@ body{
     text-align: center;
 }
 
+/*              Input                */
+input{
+    
+}
 
 /*          Name             */
 .name{
@@ -88,12 +92,15 @@ button:hover{
     .name{
         text-align: center;
     }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Comic Neue', cursive;
+    }
     img{
         height: 250px;
-    }
-    .content{
-        display: block;
-        font-family: 'Comic Neue', cursive;
+        width: auto;
     }
     .info{
         margin: 20px 0;
