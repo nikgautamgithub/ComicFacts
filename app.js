@@ -72,7 +72,7 @@ const displayName = json =>{
 const getCharacter = () => {
     nameDiv.innerHTML='Did you know that?';
     statsDiv.innerHTML='';
-    fetch(`https://superheroapi.com/api.php/${access_token}/178`)
+    fetch(`https://superheroapi.com/api.php/${access_token}/${random()}`)
         .then(response => response.json())
         .then(json => {
             // console.log(json);
