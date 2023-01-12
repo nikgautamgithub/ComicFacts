@@ -35,7 +35,7 @@ const displayStats = json =>{
     
     //About biography
     let biography = json.biography;
-    if(biography.aliases[0]!=='null' && biography.aliases!=='-') createElement(`Aliases: ${biography.aliases.slice(0,3)}`,'h4');
+    if(biography.aliases[0]!=='null' && biography.aliases[0]!=='-') createElement(`Aliases: ${biography.aliases.slice(0,3)}`,'h4');
     if(biography.alignment!=='null' && biography.alignment!=='-') createElement('Alignment: '+(biography.alignment==='bad'?'Evil':(biography.alignment==='neutral'?'Neutral':'Good')),'h4');
     if(biography['first-appearance']!=='-') createElement('First Appearance: '+biography['first-appearance'].split(';').slice(0,1),'h4');
     if(biography.publisher!=='null' && biography.publisher!=='-') createElement(`Publisher: ${biography.publisher}`,'h4');
