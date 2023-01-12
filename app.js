@@ -5,11 +5,11 @@ const access_token = '906287907192343';
 const random = () => Math.floor(Math.random() * 731) + 1;
 
 //random color animation
-let click = document.querySelector('button');
+const click = document.querySelector('#title');
 click.style.transition = "all 2.8s";
 setInterval(() => {
   let randomColor = Math.floor(Math.random() * 16777215).toString(16);
-  click.style.background = "#" + randomColor;
+  click.style.color = "#" + randomColor;
 }, 3000);
 
 const superImage = document.querySelector('img');//grab the image element
