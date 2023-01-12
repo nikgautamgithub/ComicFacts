@@ -28,17 +28,17 @@ const createElement = (string,tag) =>{
 const displayStats = json =>{
     //About appearances
     let appearance = json.appearance;
-    if(appearance.gender!==null) createElement(`Gender: ${appearance.gender}`,'h4');
-    if(appearance.race!=="null") createElement(`Race: ${appearance.race}`,'h4');
+    if(appearance.gender!=='-') createElement(`Gender: ${appearance.gender}`,'h4');
+    if(appearance.race!=='-') createElement(`Race: ${appearance.race}`,'h4');
     if(appearance.height[1]!=='0 cm') createElement(`Height:  ${appearance.height[0]}`,'h4');
     if(appearance.weight[1]!=='0 kg') createElement(`Weight:  ${appearance.weight[0]}`,'h4');
     
     //About biography
     let biography = json.biography;
     if(biography.aliases[0]!=='-') createElement(`Aliases: ${biography.aliases.slice(0,3)}`,'h4');
-    if(biography.alignment!==null) createElement('Alignment: '+(biography.alignment==='bad'?'Evil':(biography.alignment==='neutral'?'Neutral':'Good')),'h4');
+    if(biography.alignment!=='-') createElement('Alignment: '+(biography.alignment==='bad'?'Evil':(biography.alignment==='neutral'?'Neutral':'Good')),'h4');
     if(biography['first-appearance']!=='-') createElement('First Appearance: '+biography['first-appearance'].split(';').slice(0,1),'h4');
-    if(biography.publisher!==null) createElement(`Publisher: ${biography.publisher}`,'h4');
+    if(biography.publisher!=='-') createElement(`Publisher: ${biography.publisher}`,'h4');
 
     //About Connection
     let connections = json.connections;
