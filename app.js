@@ -81,7 +81,7 @@ const getCharacter = nameToSearch => {
             // if no response is found
             if (json.response === 'error') {
                 superImage.src = 'https://media.tenor.com/FcVg5W9zZJQAAAAM/error.gif';
-                nameDiv.innerHTML = '<h3>Not Found! Try with \"-\" between words.</h3><h5>For example, use \"spider-man\" instead of \"spiderman\" or \"spider man\"</h5>';
+                nameDiv.innerHTML = '<h3>Not Found! Try with \"-\" between words.</h3><h5>For example, use \"spider-man\" instead of \"spiderman\"</h5>';
                 return;
             }
 
