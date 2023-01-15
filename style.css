@@ -12,9 +12,8 @@
 }
 
 body{
-    font-family: 'Bangers', cursive;
     font-size: 2vmax;
-    /* background: linear-gradient(256deg, rgba(195,34,34,1) 0%, rgba(45,50,253,1) 100%); */
+    font-family: 'Bangers', cursive;
     background: url('https://images.unsplash.com/photo-1471877325906-aee7c2240b5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN1cGVyaGVybyUyMGJhY2tncm91bmR8ZW58MHx8MHx8');
     background-size: cover;
 }
@@ -29,8 +28,33 @@ body{
 }
 
 /*              Input                */
+.input{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input{
+    display: inline-flex;
+}
+
 input{
-    
+    width: 30vmax;
+    height: 3vmax;
+    font-size: 1.5rem;
+    font-family: 'Comic Neue', cursive;
+    letter-spacing: 0;
+    text-align: center;
+    border: 1px solid aliceblue;
+    border-radius: 30px;
+    background: transparent;
+}
+
+.fa-search{
+    margin: 0;
+    height: 1vmax;
+    translate: -68px -5px;
+    border: none !important;
 }
 
 /*          Name             */
@@ -65,19 +89,19 @@ img{
     margin-bottom: 4px;
 }
 
-/*               Button              */
-.button-div{
-    margin-top: 40px;
-    margin-bottom: 1%;
+.info > p{
+    display: inline-block;
+    margin-right: 30px;
 }
 
+/*               Button              */
 button{
     background: transparent;
     border: 1px solid rgba(240, 232, 232, 0.5);
     padding: 2%;
     font-size: 1.4rem;
-    border-radius: 10px;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Bangers', cursive;
+    border-radius: 30px;
     opacity: 0.7;
 }
 
@@ -90,6 +114,25 @@ button:hover{
     .wrapper{
         margin: 10px 20px;
     }
+    .input{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .search-input{
+        justify-content: center;
+    }
+    input{
+        height: 5vmax;
+        width: 50vmax;
+        font-size: large;
+    }
+    .search{ /* search icon */
+        padding: 0;
+        height: 10px;
+        translate: -25px 10px;
+    }
     .name{
         text-align: center;
     }
@@ -97,7 +140,6 @@ button:hover{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        font-family: 'Comic Neue', cursive;
     }
     img{
         height: 325px;
@@ -105,12 +147,15 @@ button:hover{
     }
     .info{
         margin: 20px 0;
+        font-family: 'Comic Neue', cursive !important;
     }
     .button-div{
         display: flex;
         justify-content: center;
     }
     button{
-        font-family: 'Bangers', cursive;
+        margin-top: 10px;
+        width: max-content;
+        font-size: medium;
     }
 }
