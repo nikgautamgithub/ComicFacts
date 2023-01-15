@@ -11,13 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="test10.css" />
     <title>SuperHero</title>
   </head>
   <body>
-    <h1 id="title">Comic Facts</h1>
-
+    
     <div class="wrapper">
+      <h1 id="title">Comic Facts</h1>
+
+      <div class="input">
+        <div class="search-input">
+          <input
+            class="input-name"
+            type="text"
+            placeholder="Enter a name to search"
+          />
+          <button class="fa fa-search search"></button>
+        </div>
+        <div class="button-div">
+          <button class="random">Random Character</button>
+        </div>
+      </div>
+
       <div class="name"></div>
 
       <div class="content">
@@ -27,11 +46,7 @@
         />
         <div class="info"></div>
       </div>
-
-      <div class="button-div">
-        <button>Random Character</button>
-      </div>
     </div>
-    <script src="app.js"></script>
+    <script src="test10.js"></script>
   </body>
 </html>
