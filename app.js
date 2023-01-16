@@ -87,7 +87,7 @@ const getCharacter = nameToSearch => {
 
             superImage.src = 'https://cdn.pixabay.com/animation/2022/10/11/03/16/03-16-39-160_512.gif';
 
-            //if many respone is found display the first one
+            //if many respone is found display the one with exact name or else display the first one
             if ('results' in json){
                 let ifMatchNotFound = true;
                 let allResults = Object.keys(json.results);
