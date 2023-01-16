@@ -88,8 +88,20 @@ const getCharacter = nameToSearch => {
             superImage.src = 'https://cdn.pixabay.com/animation/2022/10/11/03/16/03-16-39-160_512.gif';
 
             //if many respone is found display the first one
-            if ('results' in json) json = json.results[0];
-
+            if ('results' in json){
+                let ifMatchNotFound = true;
+                let allResults = Object.keys(json.results);
+                allResults.every(index => {
+                    if(nameToSearch.toLowerCase()===json.results[index].name.toLowerCase()){
+                        json = json.results[index];
+                        ifMatchNotFound = false;
+                        return false;
+                    }
+                    return true;
+                });
+                if(ifMatchNotFound) json = json.results[0];
+            }
+            
             //Lazy Load
             let tempImg = document.createElement('img');
             tempImg.onerror = () => {
